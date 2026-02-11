@@ -22,6 +22,10 @@ import { FunctionDemo1 } from "./component/FunctionDemo1";
 import { UseStateDemo2 } from "./component/UseStateDemo2";
 import { UseStateDemo3 } from "./component/UseStateDemo3";
 import { UseStateDemo1 } from "./component/UseStateDemo1";
+import { Employees } from "./component/Employees";
+import { InputDemo1 } from "./component/input/InputDemo1";
+import { InputDemo2 } from "./component/input/InputDemo2";
+import { FormDemo1 } from "./component/form/FormDemo1";
 
 
 
@@ -41,6 +45,11 @@ function App() {
         <Route path="/usestatedemo1" element={<UseStateDemo1/>}></Route>
         <Route path="/usestatedemo2" element={<UseStateDemo2/>}></Route>
         <Route path="/usestatedemo3" element={<UseStateDemo3/>}></Route>
+        <Route path="/employees" element ={<Employees/>}></Route>
+        <Route path="/inputdemo1" element = {<InputDemo1/>}></Route>
+        <Route path="/inputdemo2" element = {<InputDemo2/>}></Route>
+        <Route path="/formdemo1" element = {<FormDemo1/>}></Route>
+        <Route path="/*" element = {<ErrorNotFound/>}></Route>
       </Routes>
     </div>
   );
