@@ -2,30 +2,31 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 //import './App.css'
-import { HeaderComponent } from "./component/HeaderComponent";
-import { FooterComponent } from "./component/FooterComponent";
-import ContentComponent from "./component/ContentComponet";
-import { MapDemo1 } from "./component/MapDemo1";
-import { MapDemo2 } from "./component/MapDemo2";
-import { MapDemo3 } from "./component/MapDemo3";
-import { MapDemo4 } from "./component/MapDemo4";
-import { MapDemo5 } from "./component/MapDemo5";
+import { HeaderComponent } from "./components/HeaderComponent";
+import { FooterComponent } from "./components/FooterComponent";
+import ContentComponent from "./components/ContentComponet";
+import { MapDemo1 } from "./components/MapDemo1";
+import { MapDemo2 } from "./components/MapDemo2";
+import { MapDemo3 } from "./components/MapDemo3";
+import { MapDemo4 } from "./components/MapDemo4";
+import { MapDemo5 } from "./components/MapDemo5";
 import { Route, Routes } from "react-router-dom";
-import { NetflixHome } from "./component/NetflixHome";
-import { NetflixMovies } from "./component/NetflixMovies";
-import { NetflixShows } from "./component/NetflixShows";
-import { Navbar } from "./component/Navbar";
-import { HomeComponet } from "./component/HomeComponet";
-import { ErrorNotFound } from "./component/ErrorNotFound";
-import { Watch } from "./component/Watch";
-import { FunctionDemo1 } from "./component/FunctionDemo1";
-import { UseStateDemo2 } from "./component/UseStateDemo2";
-import { UseStateDemo3 } from "./component/UseStateDemo3";
-import { UseStateDemo1 } from "./component/UseStateDemo1";
-import { Employees } from "./component/Employees";
-import { InputDemo1 } from "./component/input/InputDemo1";
-import { InputDemo2 } from "./component/input/InputDemo2";
-import { FormDemo1 } from "./component/form/FormDemo1";
+import { NetflixHome } from "./components/NetflixHome";
+import { NetflixMovies } from "./components/NetflixMovies";
+import { NetflixShows } from "./components/NetflixShows";
+import { Navbar } from "./components/Navbar";
+import { HomeComponet } from "./components/HomeComponet";
+import { ErrorNotFound } from "./components/ErrorNotFound";
+import { Watch } from "./components/Watch";
+import { FunctionDemo1 } from "./components/FunctionDemo1";
+import { UseStateDemo2 } from "./components/UseStateDemo2";
+import { UseStateDemo3 } from "./components/UseStateDemo3";
+import { UseStateDemo1 } from "./components/UseStateDemo1";
+import { Employees } from "./components/Employees";
+import { InputDemo1 } from "./components/input/InputDemo1";
+import { InputDemo2 } from "./components/input/InputDemo2";
+import { FormDemo1 } from "./components/form/FormDemo1";
+import { FormDemo2 } from "./components/form/FormDemo2";
 
 
 
@@ -49,6 +50,7 @@ function App() {
         <Route path="/inputdemo1" element = {<InputDemo1/>}></Route>
         <Route path="/inputdemo2" element = {<InputDemo2/>}></Route>
         <Route path="/formdemo1" element = {<FormDemo1/>}></Route>
+        <Route path="/formdemo2" element = {<FormDemo2/>}></Route>
         <Route path="/*" element = {<ErrorNotFound/>}></Route>
       </Routes>
     </div>
